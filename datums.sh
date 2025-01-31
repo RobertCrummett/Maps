@@ -1,4 +1,4 @@
-gmt begin pd pdf
+gmt begin datums pdf
 gmt grdcut @earth_relief_02m -R-125/-67/25/49 -JM6i -Ggrid.nc
 gmt grd2xyz grid.nc > grid.xyz
 gmt mapproject grid.xyz -Th219 -V > grid_wgs84.xyz
